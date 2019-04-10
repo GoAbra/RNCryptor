@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 	s.name = 'RNCryptor'
-	s.version = '5.0.3'
+	s.version = '5.0.4'
 	s.summary = 'Cross-language AES Encryptor/Decryptor data format.'
 	s.authors = {'Rob Napier' => 'robnapier@gmail.com'}
 	s.social_media_url = 'https://twitter.com/cocoaphony'
@@ -9,8 +9,9 @@ Pod::Spec.new do |s|
 	s.description = 'Implements a secure encryption format based on AES, PBKDF2, and HMAC.'
 	s.homepage = 'https://github.com/rnapier/RNCryptor'
 	s.source_files = 'Sources/RNCryptor/RNCryptor.swift', 'Sources/Cryptor/include/RNCryptor.h'
-	s.ios.deployment_target = '8.0'
+	s.ios.deployment_target = '11.0'
 	s.osx.deployment_target = '10.9'
 	s.watchos.deployment_target = '2.0'
 	s.tvos.deployment_target = '9.0'
+	s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
 end
